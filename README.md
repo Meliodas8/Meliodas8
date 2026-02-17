@@ -1,3 +1,6 @@
 # Meliodas
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Meliodas8&theme=dark)
+## 📊 Estadísticas de Lenguajes
+
+![](https://raw.githubusercontent.com/Meliodas8/Meliodas8/master/generated/languages.svg)
+![](https://raw.githubusercontent.com/Meliodas8/Meliodas8/master/generated/overview.svg)
