@@ -1,6 +1,10 @@
 # Meliodas
 
-![My GitHub stats](https://github-readme-stats.vercel.app/api?username=Meliodas8&hide_border=true&layout=compact&theme=shadow_red)
+<div align="center">
 
-![Top used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Meliodas8&hide_border=true&layout=compact&theme=shadow_red)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Meliodas8&show_icons=true&theme=shadow_red&hide_border=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Meliodas8&layout=compact&theme=shadow_red&hide_border=true)
+
+</div>
 
