@@ -1,9 +1,9 @@
 # Meliodas
 
-<div align="center">
+---
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Meliodas8&show_icons=true&theme=radical&hide_border=true)
+📊 **GitHub Stats**
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Meliodas8&layout=compact&theme=radical&hide_border=true)
+![Meliodas's GitHub stats](https://github-readme-stats.vercel.app/api?username=Meliodas8&show_icons=true&theme=dark)
 
-</div>
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Meliodas8&layout=compact&theme=dark)
