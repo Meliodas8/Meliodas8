@@ -1,9 +1,7 @@
 # Meliodas
 
----
+![GitHub followers](https://img.shields.io/github/followers/Meliodas8?style=social)
 
-📊 **GitHub Stats**
+### 📊 Lenguajes más usados
 
-![Meliodas's GitHub stats](https://github-readme-stats.vercel.app/api?username=Meliodas8&show_icons=true&theme=dark)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Meliodas8&layout=compact&theme=dark)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Meliodas8&layout=compact&theme=dark)](https://github.com/Meliodas8)
