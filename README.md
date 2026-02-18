@@ -1,5 +1,5 @@
 # Meliodas
 
-## 📊 Lenguajes más usados
+## 💻 Lenguajes
 
-![Languages](https://raw.githubusercontent.com/Meliodas8/Meliodas8/main/languages.svg)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Meliodas8&hide=html&layout=compact&theme=radical)
