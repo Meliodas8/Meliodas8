@@ -1,4 +1,4 @@
-name: Generate Stats
+name: Generate Language Stats
 
 on:
   schedule:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  github-metrics:
+  update-languages:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -19,10 +19,11 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           user: Meliodas8
           template: classic
-          base: header, activity, community
-          config_timezone: Europe/Madrid
+          base: ""
           plugin_languages: yes
-          plugin_languages_colors: github
+          plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
+          plugin_languages_colors: github
           plugin_languages_threshold: 0%
+          filename: languages.svg
