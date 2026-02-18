@@ -1,5 +1,5 @@
 # Meliodas
 
-## 📊 Estadísticas de Lenguajes
+## 📊 Lenguajes más usados
 
-![Metrics](https://raw.githubusercontent.com/Meliodas8/Meliodas8/main/github-metrics.svg)
+![Languages](https://raw.githubusercontent.com/Meliodas8/Meliodas8/main/languages.svg)
