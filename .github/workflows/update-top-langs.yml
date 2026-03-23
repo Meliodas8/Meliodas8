@@ -2,7 +2,7 @@ name: Update top languages svg
 
 on:
   schedule:
-    - cron: "15 3 * * *"  # todos los días 03:15 UTC
+    - cron: "15 3 * * *" # todos los días 03:15 UTC
   workflow_dispatch: {}
 
 permissions:
@@ -15,6 +15,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Download top languages svg
         env:
@@ -23,7 +25,6 @@ jobs:
           set -euo pipefail
           mkdir -p assets
 
-          # Descarga (fallar si HTTP no es 200)
           curl -fSL \
             -H "Authorization: Bearer $TOKEN" \
             "https://github-readme-stats.vercel.app/api/top-langs/?username=Meliodas8&layout=compact&hide_border=true&langs_count=10&count_private=true" \
@@ -31,26 +32,11 @@ jobs:
 
           echo "Downloaded file info:"
           ls -la assets
-          file assets/top-langs.svg || true
-          head -n 20 assets/top-langs.svg
-    
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Ensure assets dir
-        run: mkdir -p assets
-
-      - name: Download top languages svg (includes private via token)
-        env:
-          TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
-        run: |
-          curl -L \
-            -H "Authorization: Bearer $TOKEN" \
-            "https://github-readme-stats.vercel.app/api/top-langs/?username=Meliodas8&layout=compact&hide_border=true&langs_count=10&private=true" \
-            -o assets/top-langs.svg
+          head -n 5 assets/top-langs.svg
 
       - name: Commit & push if changed
         run: |
+          set -euo pipefail
           if git diff --quiet; then
             echo "No changes."
             exit 0
