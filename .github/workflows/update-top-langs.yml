@@ -25,8 +25,14 @@ jobs:
           set -euo pipefail
           mkdir -p assets
 
+          ENCODED_TOKEN="$(python3 - << 'PY'
+          import os, urllib.parse
+          print(urllib.parse.quote(os.environ["TOKEN"], safe=""))
+          PY
+          )"
+
           curl -fSL \
-            "https://github-readme-stats.vercel.app/api/top-langs/?username=Meliodas8&layout=compact&hide_border=true&langs_count=10&count_private=true&token=${TOKEN}" \
+            "https://github-readme-stats.vercel.app/api/top-langs/?username=Meliodas8&layout=compact&hide_border=true&langs_count=10&count_private=true&token=${ENCODED_TOKEN}" \
             -o assets/top-langs.svg
 
           echo "Downloaded file info:"
