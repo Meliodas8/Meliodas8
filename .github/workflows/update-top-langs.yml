@@ -26,8 +26,7 @@ jobs:
           mkdir -p assets
 
           curl -fSL \
-            -H "Authorization: Bearer $TOKEN" \
-            "https://github-readme-stats.vercel.app/api/top-langs/?username=Meliodas8&layout=compact&hide_border=true&langs_count=10&count_private=true" \
+            "https://github-readme-stats.vercel.app/api/top-langs/?username=Meliodas8&layout=compact&hide_border=true&langs_count=10&count_private=true&token=${TOKEN}" \
             -o assets/top-langs.svg
 
           echo "Downloaded file info:"
