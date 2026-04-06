@@ -32,6 +32,9 @@ jobs:
           )"
 
           curl -fSL \
+            --retry 5 \
+            --retry-delay 15 \
+            --retry-all-errors \
             "https://github-readme-stats.vercel.app/api/top-langs/?username=Meliodas8&layout=compact&hide_border=true&langs_count=10&count_private=true&token=${ENCODED_TOKEN}" \
             -o assets/top-langs.svg
 
